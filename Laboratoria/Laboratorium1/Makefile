@@ -6,8 +6,6 @@ prog1: prog1.cpp
 prog2: prog2.cpp
 	g++ prog2.cpp -o prog2.exe
 
-
-.PHONY=clean
-
+.PHONY: clean
 clean:
 	rm prog1.exe prog2.exe
