@@ -1,4 +1,3 @@
-
 # Kompilacja wszystkich `demo`
 
 ```
@@ -18,3 +17,4 @@ make -j liczba_procesorow
  * `demo-std-vector.cpp`: korzystanie z `std::vector`;
  * `demo-std-map.cpp`: korzystanie z `std::map`.
 
+# [**Wiki page**](https://github.com/andywiecko/Techniki-Programowania/wiki/3.-Tablice-i-kontenery)
