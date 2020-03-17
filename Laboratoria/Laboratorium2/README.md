@@ -1,18 +1,22 @@
-# Kompilacja wszystkich `demo`
+# Laboratorium 2
 
-```
+## Kompilacja wszystkich `demo`
+
+```bash
 make
 ```
+
 lub
-```
+
+```bash
 make -j liczba_procesorow
 ```
 
-# Co w środku?
+## Co w środku
 
- * `demo-bool.cpp`: korzystanie z typu `bool`  
- * `demo-enum.cpp`: przykład listy wyliczeniowej
- * `demo-function-overloading.cpp`: przykład przeciążenia funkcji
- * `demo-string`: możliwości klasy `std::string` + `range-for`
+- `demo-bool.cpp`: korzystanie z typu `bool`  
+- `demo-enum.cpp`: przykład listy wyliczeniowej
+- `demo-function-overloading.cpp`: przykład przeciążenia funkcji
+- `demo-string`: możliwości klasy `std::string` + `range-for`
 
-# [**Wiki page**](https://github.com/andywiecko/Techniki-Programowania/wiki/2.-Więcej-nowości%3F)
+## [**Wiki page**](https://github.com/andywiecko/Techniki-Programowania/wiki/2.-Więcej-nowości%3F)
