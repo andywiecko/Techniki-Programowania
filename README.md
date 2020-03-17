@@ -12,5 +12,5 @@ Language of the course is polish and all relevant teaching materials are publish
 ## Co jest w tym repozytorium
 
 * [**Wikipage**](https://github.com/andywiecko/Techniki-Programowania/wiki) z notatkami z zajęć;
-* Przykładowe programy [Laboratoria](https://github.com/andywiecko/Techniki-Programowania/Laboratoria)
+* Przykładowe programy z zajęć: [**Laboratoria**](https://github.com/andywiecko/Techniki-Programowania/tree/master/Laboratoria)
 * Listy ...
