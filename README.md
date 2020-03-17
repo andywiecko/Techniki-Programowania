@@ -7,10 +7,10 @@ The main goal of the course is an introduction to `C++` programming.
 Classes are conducted after **Procedural programming in C** course, then student has some general knowledge about programming.
 Language of the course is polish and all relevant teaching materials are published in polish.
 
-<hr />
+***
 
-## Co jest w tym repozytorium?
+## Co jest w tym repozytorium
 
-* [*Wikipage*](https://github.com/andywiecko/Techniki-Programowania/wiki) z notatkami z zajęć; 
-* Przykładowe programy
-* ...
+* [**Wikipage**](https://github.com/andywiecko/Techniki-Programowania/wiki) z notatkami z zajęć;
+* Przykładowe programy [Laboratoria](https://github.com/andywiecko/Techniki-Programowania/Laboratoria)
+* Listy ...
