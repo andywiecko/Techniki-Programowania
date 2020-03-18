@@ -1,11 +1,8 @@
-#include <iostream>
-#include <vector>
-
 #include "src/KasaBiletowa.hpp"
+#include "src/Bilet.hpp"
 
 int main()
 {
+    Bilet bilet{TypBiletu::Studencki};
     KasaBiletowa kasa{"Kasa A", 10};
-    std::vector<KasaBiletowa> kasy{kasa, {"Kasa B", 5}, {"Kasa C"}};
-    std::cout << KasaBiletowa::otwarteKasy << "\n"; // <-- wyświetli się `0` [!]
 }
