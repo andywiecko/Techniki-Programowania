@@ -16,6 +16,9 @@ public:
     void Wyswietl();
     Zespolone(double a);
     operator double();
+    Zespolone operator*(Zespolone inna);
+    Zespolone operator++();
+    Zespolone operator++(int);
 };
 
 #endif

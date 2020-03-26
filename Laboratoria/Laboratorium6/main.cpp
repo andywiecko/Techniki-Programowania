@@ -12,6 +12,11 @@ double WartoscBezwzgledna(double liczba)
     return std::abs(liczba);
 }
 
+Zespolone operator+(Zespolone z1, Zespolone z2)
+{
+    return Dodaj(z1,z2);
+}
+
 int main()
 {
 
@@ -38,4 +43,27 @@ int main()
 
     Zespolone zespolonaLiczba{3,4};
     std::cout << WartoscBezwzgledna(zespolonaLiczba) << std::endl;
+
+    // operator +
+    Zespolone z5 = z1 + z2;
+    z5.Wyswietl();
+
+    // operator *
+    Zespolone i {0,1};
+    Zespolone jedynka{1,0};
+    Zespolone wynikMnozenia{i*jedynka};
+    wynikMnozenia.Wyswietl();
+    wynikMnozenia = i*i;
+    wynikMnozenia.Wyswietl();
+
+    // post- i pre- ++
+    Zespolone post{1.0,0.0};
+    Zespolone pre{1.0,0.0};
+    Zespolone wynikPost{post++};
+    Zespolone wynikPre{++pre};
+    post.Wyswietl();
+    wynikPost.Wyswietl();
+    pre.Wyswietl();
+    wynikPre.Wyswietl();
+
 }
