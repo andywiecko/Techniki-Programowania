@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <ostream>
 #include "src/Zespolone.hpp"
 
 Zespolone Dodaj(Zespolone z1, Zespolone z2)
@@ -15,6 +15,12 @@ double WartoscBezwzgledna(double liczba)
 Zespolone operator+(Zespolone z1, Zespolone z2)
 {
     return Dodaj(z1,z2);
+}
+
+std::ostream & operator << (std::ostream & wyjscie, Zespolone z)
+{
+    wyjscie << "{" << z.Re() << ", "<< z.Im() << "}";
+    return wyjscie;
 }
 
 int main()
@@ -65,5 +71,8 @@ int main()
     wynikPost.Wyswietl();
     pre.Wyswietl();
     wynikPre.Wyswietl();
+
+    // test <<
+    std::cout << Zespolone{3,4} << std::endl;
 
 }
