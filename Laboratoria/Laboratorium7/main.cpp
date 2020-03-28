@@ -11,4 +11,9 @@ int main()
     while(pojazdWyscigowy.Jedz());
     pojazdWyscigowy.Info();
 
+    Autobus autobus = FabrykaPojazdow::ProdukujAutobus({"Janusz (kierowca)"});
+    autobus.DodajPasazerow({"Jan", "Bartek", "Adam", "Ania"});
+    autobus.Info();
+    autobus.Pojazd::Info();
+
 }

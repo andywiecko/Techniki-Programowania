@@ -11,7 +11,7 @@ class Pojazd
 {
     friend class FabrykaPojazdow;
 
-private:
+protected:
     // nazwy parametrów pojazdu
     static const std::string zasoby;
     static const std::string szybkosc;
