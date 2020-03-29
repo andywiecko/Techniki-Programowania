@@ -1,4 +1,4 @@
-# Laboratorium 6
+# Laboratorium 7
 
 ## Kompilacja wszystkich `demo`
 
