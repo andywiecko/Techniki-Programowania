@@ -57,6 +57,7 @@ int main()
 	std::cout << std::boolalpha;
 	std::vector<TestCase> tests{{
 		{"x", "x", "a"},							// Sanity check
+		{"xxx", "xxx", "x"},							// Sanity check II
 		{"xyz", "xyz", "xz"},						// Sanity check
 		{"xyz", "axyzb", "axyb"},					// Partial match within
 		{"xyz", "xyzaa", "yzaa"},					// Partial match at the beginning
