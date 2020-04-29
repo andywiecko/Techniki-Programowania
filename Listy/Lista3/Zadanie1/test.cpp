@@ -2,15 +2,15 @@
 // @michocio
 // @andywiecko
 
-//#include "match.hpp"
+#include "match.hpp"
 #include <iostream>
 #include <iomanip>
 #include <vector>
-
+/*
 bool match(std::string, std::string)
 {
 	return true;
-};
+};*/
 
 class TestCase
 {
@@ -36,12 +36,12 @@ public:
 		Display(s_pattern);
 		std::cout << "\t";
 		Display(s_match);
-		std::cout << ": " << match(s_pattern, s_match) << "\t";
+		std::cout << ": " << TryMatch(s_pattern, s_match) << "\t";
 		Display(s_notMatch);
 		if (notNotMatch)
 			std::cout << ": None";
 		else
-			std::cout << ": " << match(s_pattern, s_notMatch);
+			std::cout << ": " << TryMatch(s_pattern, s_notMatch);
 		std::cout << "\n";
 	}
 
@@ -50,6 +50,24 @@ public:
 	{
 		std::cout << std::setw(fieldWidth) << t;
 	}
+
+	template <class T1, class T2>
+	std::string TryMatch(T1 t1, T2 t2)
+	{
+		try
+		{
+			if (match(t1, t2))
+				return "true";
+			else
+				return "false";			
+		}
+		catch(const std::exception& e)
+		{
+			return "FAIL";
+		}
+		
+	}
+
 };
 
 int main()
