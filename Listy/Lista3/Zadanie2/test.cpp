@@ -4,7 +4,7 @@
 int main()
 {
     const double pi{3.141592653589793238462643};
-    Point2d punkt(1, 0);
+    Point2d punkt{1, 0};
     std::cout << "Obroty:" << std::endl;
     std::cout << std::string(20, '=') << std::endl;
     std::cout << punkt << std::endl;
