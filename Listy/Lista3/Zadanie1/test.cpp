@@ -6,11 +6,8 @@
 #include <iostream>
 #include <iomanip>
 #include <vector>
-/*
-bool match(std::string, std::string)
-{
-	return true;
-};*/
+
+bool match(const std::string &, const std::string &);
 
 class TestCase
 {
@@ -59,15 +56,13 @@ public:
 			if (match(t1, t2))
 				return "true";
 			else
-				return "false";			
+				return "false";
 		}
-		catch(const std::exception& e)
+		catch (const std::exception &e)
 		{
 			return "FAIL";
 		}
-		
 	}
-
 };
 
 int main()
@@ -75,7 +70,7 @@ int main()
 	std::cout << std::boolalpha;
 	std::vector<TestCase> tests{{
 		{"x", "x", "a"},							// Sanity check
-		{"xxx", "xxx", "x"},							// Sanity check II
+		{"xxx", "xxx", "x"},						// Sanity check II
 		{"xyz", "xyz", "xz"},						// Sanity check
 		{"xyz", "axyzb", "axyb"},					// Partial match within
 		{"xyz", "xyzaa", "yzaa"},					// Partial match at the beginning
@@ -83,12 +78,12 @@ int main()
 		{"x*z", "xabczzz", "xabc"},					// Kleene star easy
 		{"x*z", "xzzzzz", "yxxxxzzzz"},				// Kleene star medium
 		{"*", "aa", "", true},						// Matches any sequence
-		{"?", "xy", ""},							// Partial wildcard
+		{"?y", "xy", ""},							// Partial wildcard
 		{"??", "xy", ""},							// Greedy kleene
 		{"?*", "a", ""},							// Empty kleene
 		{"?", "x", ""},								// Easy wildcard
-		{"a?b?c", "aabbcc", "abc"},					//
-		{"?x?y?z?", "xxxyzz", "xayza"},				//
+		{"a?b?c", "aabbc", "abc"},					//
+		{"?x?y?z?", "xxxyyzz", "xayza"},			//
 		{"?*?", "aa", "a"},							//
 		{"?***?", "aa", "x"},						//
 		{"****", "abcdef", "", true},				//
