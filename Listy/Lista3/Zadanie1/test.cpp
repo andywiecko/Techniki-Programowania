@@ -78,6 +78,7 @@ int main()
 		{"x*z", "xabczzz", "xabc"},					// Kleene star easy
 		{"x*z", "xzzzzz", "yxxxxzzzz"},				// Kleene star medium
 		{"*", "aa", "", true},						// Matches any sequence
+		{"?", "xy", ""},							// Partial wildcard
 		{"?y", "xy", ""},							// Partial wildcard
 		{"??", "xy", ""},							// Greedy kleene
 		{"?*", "a", ""},							// Empty kleene
